@@ -524,10 +524,9 @@ header.sticky {
     }
 
     .home-text h5 {
-        margin-top: 3rem;
+        margin-top: 2rem;
         font-weight: 600;
         text-align: justify;
-        padding: 5px;
     }
 
     :root {
