@@ -485,6 +485,11 @@ header.sticky {
 }
 
 @media (max-width: 830px) {
+
+    .header{
+        height: 10px;
+    }
+
     #menu-icon {
         display: block;
     }
