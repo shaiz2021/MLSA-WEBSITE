@@ -9,9 +9,9 @@
 }
 
 :root {
-    --bg-color: #e6eef1;
+    --bg-color: #E9F8FF;
     --text-color: #000000;
-    --main-color: #3b82f6;
+    --main-color: #eb4a4a;
     --second-color: #A9A9A9;
     --other-color: #12141c;
     --h1-font: 5.2rem;
@@ -52,7 +52,7 @@ header h2 {
 
 .navbar a {
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: var(--p-font);
     font-weight: 600;
     padding: 10px 25px;
     margin: 0 2px;
@@ -82,23 +82,11 @@ section {
     height: 100vh;
     width: 100%;
     position: relative;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     animation: fadeIn 2s ease-in-out;
-}
-
-.home-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    align-items: center;
-}
-
-.home-logo img {
-    width: 1600px;
-    height: 250px;
 }
 
 @keyframes fadeIn {
@@ -128,15 +116,11 @@ span {
     font-weight: bolder;
 }
 
-.home-text h5 {
+.home-text h4 {
+    color: var(--main-color);
+    font-size: 30px;
     margin-top: 3rem;
     font-weight: 600;
-    text-align: justify;
-}
-
-.blue {
-    color: var(--main-color);
-    font-size: 16px;
 }
 
 .home-text h3 {
@@ -179,7 +163,7 @@ header.sticky {
 
 .about-text h4 {
     margin: 10px 0;
-    color: #878f9c;
+    color: orange;
     font-size: 20px;
     font-weight: 600;
     animation: slideIn 1.5s ease-out;
@@ -245,10 +229,7 @@ header.sticky {
 .main-text h2 {
     font-size: var(--h2-font);
     margin-bottom: 10px;
-}
-
-.maintexth2{
-    font-size: var(--h2-font);
+    box-shadow: rgb(148, 148, 148);
 }
 
 .services-content {
@@ -261,7 +242,7 @@ header.sticky {
 }
 
 .box {
-    padding: 22px;
+    padding: 45px;
     background: #E9F8FF;
     border: 5px solid transparent;
     transition: all .40s ease;
@@ -271,11 +252,7 @@ header.sticky {
 }
 
 .box img {
-    height: 250px;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
+    height: 150px;
 }
 
 .box h3 {
@@ -300,7 +277,6 @@ header.sticky {
     color: var(--main-color);
 }
 
-/* 
 .portfolio-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
@@ -352,7 +328,7 @@ header.sticky {
     transform: scale(1.01) translateY(-5px);
     transition: all 0.7s ease-in-out;
     cursor: pointer;
-} */
+}
 
 .contact {
     display: grid;
@@ -435,7 +411,7 @@ header.sticky {
 
 .top i {
     color: var(--bg-color);
-    background: var(--main-color);
+    background: rgb(242, 120, 120);
     font-size: 30px;
     padding: 10px;
     border-radius: 0.5rem;
@@ -451,7 +427,7 @@ header.sticky {
     }
 
     section {
-        padding: 130px 2% 60px;
+        padding: 130px 3% 60px;
     }
 }
 
@@ -467,7 +443,7 @@ header.sticky {
     }
 
     .home {
-        height: 100vh;
+        height: 105vh;
     }
 
     .about {
@@ -511,22 +487,12 @@ header.sticky {
         transition: all .3000s ease;
     }
 
-    .home-logo{
-        display: none;
-    }
-
     .navbar.active {
         top: 100%;
     }
 
     .about-text h2 {
         display: none;
-    }
-
-    .home-text h5 {
-        margin-top: 2rem;
-        font-weight: 600;
-        text-align: justify;
     }
 
     :root {
