@@ -487,7 +487,7 @@ header.sticky {
 @media (max-width: 830px) {
 
     .header{
-        height: 10px;
+        height: 7px;
     }
 
     #menu-icon {
