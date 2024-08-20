@@ -515,6 +515,10 @@ header.sticky {
         display: none;
     }
 
+    .header{
+        padding: 4px;
+    }
+
     .navbar.active {
         top: 100%;
     }
